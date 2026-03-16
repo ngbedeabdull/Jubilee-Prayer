@@ -2,43 +2,51 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+
+<!-- Correct mobile scaling -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Silver Jubilee Prayer</title>
 
 <style>
 
+*{
+    box-sizing:border-box;
+}
+
 body{
-    font-family: "Times New Roman", serif;
+    font-family:"Times New Roman", serif;
     background:#f4f6fb;
+    margin:0;
+    padding:20px;
     display:flex;
     justify-content:center;
-    align-items:center;
-    height:100vh;
 }
 
 .container{
     background:white;
-    padding:40px 35px;
-    max-width:500px;
+    padding:30px 20px;
+    width:100%;
+    max-width:420px;
     border:3px solid #1f3c88;
     text-align:center;
     box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
 
 .logo{
-    width:90px;
+    width:80px;
     margin-bottom:10px;
 }
 
 h1{
     color:#1f3c88;
-    font-size:28px;
+    font-size:24px;
     margin-bottom:15px;
     letter-spacing:1px;
 }
 
 p{
-    font-size:17px;
+    font-size:16px;
     line-height:1.7;
     color:#222;
 }
@@ -46,6 +54,13 @@ p{
 .amen{
     font-weight:bold;
     margin-top:10px;
+}
+
+/* Slightly bigger on large phones */
+@media (min-width:600px){
+    .container{
+        max-width:450px;
+    }
 }
 
 </style>
